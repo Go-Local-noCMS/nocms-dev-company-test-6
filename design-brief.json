@@ -1,0 +1,52 @@
+{
+  "colors": {
+    "primary": "#22d3ee",
+    "secondary": "#a78bfa",
+    "accent": "#fb923c",
+    "background": "#0f0f23",
+    "surface": "#1a1a3e",
+    "text": "#e0e0ff",
+    "muted": "#7a7aa0"
+  },
+  "typography": {
+    "headingFont": "Red Hat Display",
+    "bodyFont": "Red Hat Text",
+    "monoFont": "Red Hat Mono",
+    "scale": "default"
+  },
+  "spacing": "tight",
+  "borderRadius": "sm",
+  "shadows": "flat",
+  "mood": "Retro digital arcade — pixel-perfect grids, CRT glow, 8-bit nostalgia made modern",
+  "motionStyle": "expressive",
+  "layoutStyle": "bento-grid",
+  "designRules": [
+    "LAYOUT: Retro terminal/arcade UI — unit sizes are 'LVL 1' through 'LVL 6'. Popular sizes get 'RARE' orange badges. Search input styled as terminal prompt with '>' prefix. Blog posts as 'VOL.01' entries. Contact as 'TRANSMIT MESSAGE'. Monospace for all data.",
+    "Cyan, purple, and orange create a retro CRT monitor color palette",
+    "Bento grid layout with precise alignment references pixel art composition",
+    "Flat design with solid colored borders simulates pixel-art edges",
+    "Monospace font for data, stats, and labels reinforces the digital theme",
+    "Use glow effects (box-shadow with color) for interactive hover states",
+    "Unit size grids use pixel-perfect 2px cyan borders with glow-on-hover — data displayed in monospace like a retro terminal",
+    "Featured/popular unit badges look like retro achievement unlocks — orange accent with pixel-edge styling",
+    "CONVERSION: Facility pages use Layout Option A (units-first) — terminal-style facility header, then strict grid of LVL unit cards covering maximum screen. Search as terminal prompt in hero. On market pages, city grid with unit counts and starting prices.",
+    "CONVERSION: Reserve/CTA buttons must be the single most visually prominent element on every page — larger than navigation links, higher contrast than body text, with hover state that increases visual weight. Use the primary color at full saturation. Every unit card and table row MUST have a Reserve button.",
+    "CONVERSION: Use badges to show real-time social proof and urgency — 'Most Popular' on the best-selling size, 'X Left!' in a warning color when availability is low, 'Available' in a success color for in-stock units. Price must be the largest text element in every unit card, displayed in the primary or accent color."
+  ],
+  "designPatterns": {
+    "card": "<div className=\"bg-surface border-2 border-primary/20 rounded-sm p-6 hover:border-primary/50 hover:shadow-[0_0_15px] hover:shadow-primary/15 transition-all\">",
+    "button": "<a className=\"bg-primary text-background font-bold px-7 py-3 rounded-sm border-2 border-primary shadow-[0_0_10px] shadow-primary/20 hover:shadow-[0_0_20px] hover:shadow-primary/40 transition-all text-sm uppercase tracking-wider\">",
+    "buttonSecondary": "<a className=\"border-2 border-secondary/40 text-secondary font-bold px-7 py-3 rounded-sm hover:bg-secondary/10 hover:shadow-[0_0_10px] hover:shadow-secondary/20 transition-all text-sm uppercase tracking-wider\">",
+    "heading": "<h2 className=\"font-heading text-4xl md:text-6xl font-black text-primary tracking-tight leading-[0.9]\">",
+    "subheading": "<p className=\"text-lg text-text-muted leading-relaxed max-w-2xl font-mono\">",
+    "badge": "<span className=\"inline-flex items-center gap-1.5 bg-accent/10 border border-accent/30 text-accent font-mono font-bold rounded-sm px-3 py-1 text-xs uppercase tracking-wider\">",
+    "input": "<input className=\"w-full bg-background border-2 border-primary/20 rounded-sm px-4 py-3 font-mono text-sm text-text placeholder:text-text-muted focus:outline-none focus:border-primary/50 focus:shadow-[0_0_10px] focus:shadow-primary/15 transition\" />",
+    "sectionBg": "bg-background",
+    "sectionAltBg": "bg-surface",
+    "sectionDarkBg": "bg-gradient-to-b from-surface via-background to-surface/30",
+    "navStyle": "bg-background/90 backdrop-blur-md border-b-2 border-primary/15",
+    "footerStyle": "bg-surface border-t-2 border-primary/15",
+    "iconBox": "<div className=\"h-12 w-12 rounded-sm bg-primary/10 border-2 border-primary/20 flex items-center justify-center text-primary\">",
+    "divider": "<div className=\"h-0.5 bg-primary/15\">"
+  }
+}
